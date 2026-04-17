@@ -1,0 +1,42 @@
+body {
+  background: #f6f2eb;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.demo {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.demo-row {
+  background: #fff;
+  border-radius: 6px;
+  padding: 16px 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.demo-row .label {
+  min-width: 90px;
+  color: #6b6375;
+  font-size: 14px;
+}
+
+.card-body-stars {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2px;
+}
+
+.card-body-stars li {
+  display: inline-flex;
+}
