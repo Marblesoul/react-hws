@@ -1,0 +1,56 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  font-family: sans-serif;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 300px;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.input {
+  padding: 0.6rem 0.8rem;
+  font-size: 1.1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: monospace;
+}
+
+.input:focus {
+  border-color: #555;
+}
+
+.input.error {
+  border-color: #e53935;
+}
+
+.result {
+  font-size: 1rem;
+  color: #333;
+  min-height: 1.4rem;
+}
+
+.errorMsg {
+  color: #e53935;
+  font-size: 0.9rem;
+  min-height: 1.2rem;
+}
