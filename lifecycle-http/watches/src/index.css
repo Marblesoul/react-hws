@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #1d1b16;
+  background: #f5f1e8;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+button,
+input {
+  font: inherit;
+}

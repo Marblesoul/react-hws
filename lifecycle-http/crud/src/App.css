@@ -1,0 +1,135 @@
+.page-shell {
+  min-height: 100vh;
+  padding: 42px 20px;
+}
+
+.notes-workspace {
+  width: min(900px, 100%);
+  margin: 0 auto;
+}
+
+.notes-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.notes-header h1 {
+  margin: 0;
+  font-size: 38px;
+  line-height: 1;
+}
+
+.refresh-button,
+.delete-button,
+.send-button {
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.refresh-button {
+  width: 38px;
+  height: 38px;
+  color: #198f44;
+  background: #ffffff;
+  border: 2px solid #198f44;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.refresh-button:disabled,
+.send-button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+  margin-bottom: 34px;
+}
+
+.note-card {
+  position: relative;
+  min-height: 120px;
+  padding: 24px 18px 18px;
+  background: #ffffff;
+  border: 1px solid #d3d8cf;
+  border-radius: 6px;
+  box-shadow: 0 12px 26px rgba(47, 55, 42, 0.12);
+}
+
+.note-card p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.delete-button {
+  position: absolute;
+  top: -11px;
+  right: -11px;
+  width: 30px;
+  height: 30px;
+  color: #bd2f2f;
+  background: #ffffff;
+  border: 2px solid #bd2f2f;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.note-form {
+  position: relative;
+  width: min(420px, 100%);
+}
+
+.note-field {
+  display: grid;
+  gap: 10px;
+  color: #495044;
+  font-size: 15px;
+}
+
+.note-field textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 118px;
+  padding: 14px 54px 14px 14px;
+  background: #ffffff;
+  border: 1px solid #cfd6ca;
+  border-radius: 6px;
+}
+
+.send-button {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 38px;
+  height: 38px;
+  color: #2f6f4e;
+  background: #ffffff;
+  border: 2px solid #2f6f4e;
+  border-radius: 50%;
+}
+
+.empty-state,
+.error-message {
+  margin: 0 0 24px;
+}
+
+.error-message {
+  padding: 12px 14px;
+  color: #8e2727;
+  background: #ffe7e7;
+  border: 1px solid #e7a5a5;
+  border-radius: 6px;
+}
+
+@media (max-width: 560px) {
+  .page-shell {
+    padding: 28px 14px;
+  }
+}

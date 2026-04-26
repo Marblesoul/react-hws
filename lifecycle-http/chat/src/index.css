@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #1f2523;
+  background: #e9ede7;
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+button,
+textarea {
+  font: inherit;
+}

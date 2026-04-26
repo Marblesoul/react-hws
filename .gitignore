@@ -87,3 +87,6 @@ typings/
 
 .idea
 .DS_Store
+
+.claude
+.codex

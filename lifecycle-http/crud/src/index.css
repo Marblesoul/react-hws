@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #202020;
+  background: #f2f4f0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+button,
+textarea {
+  font: inherit;
+}
