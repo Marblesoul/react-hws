@@ -62,7 +62,11 @@ export function Details({ info }: DetailsProps) {
       {error && <div className="state error">{error}</div>}
       {details && (
         <>
-          <img className="avatar" src={details.avatar} alt={details.name} />
+          <img
+            className="avatar"
+            src={`${details.avatar}?img=${details.id}`}
+            alt={details.name}
+          />
           <div className="details-content">
             <h2>{details.name}</h2>
             <dl>
